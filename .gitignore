@@ -34,3 +34,4 @@
 CMakeLists.txt
 .vscode
 build/*
+main.cpp

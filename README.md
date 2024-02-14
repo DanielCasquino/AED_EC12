@@ -1,9 +1,9 @@
-# EC_12_
+# EC*12*
 
 **Integrantes**
-
--> Daniel Casquino 
 
 -> Ian González
 
 -> Gabriel Blanco
+
+-> Daniel Casquino

@@ -4,6 +4,10 @@
 
 using namespace std;
 
+// Ian González
+// Gabriel Blanco
+// Daniel Casquino
+
 class Solution
 {
     bool isBipartite(int i, vector<vector<int>> &graph, vector<bool> &visited, vector<bool> &colored)
@@ -21,7 +25,7 @@ class Solution
             int curr = traversalStack.top();
             traversalStack.pop();
 
-            for (auto neighbour : graph[curr])
+            for (auto neighbour : graph[curr]) // Checks neighbours
             {
                 if (!visited[neighbour]) // If they havent been visited, paint them the opposite color and mark them as visited. Add to stack as well
                 {
@@ -58,7 +62,9 @@ public:
 // {
 //     vector<vector<int>> graph1 = {{1, 2, 3}, {0, 2}, {0, 1, 3}, {0, 2}};
 //     vector<vector<int>> graph2 = {{1, 3}, {0, 2}, {1, 3}, {0, 2}};
+//     vector<vector<int>> graph3 = {{}, {2, 4}, {1, 3}, {2, 4}, {1, 3}, {6}, {5}}; // Custom test
 //     cout << boolalpha << Solution().isBipartite(graph1) << endl
-//          << Solution().isBipartite(graph2);
+//          << Solution().isBipartite(graph2) << endl
+//          << Solution().isBipartite(graph3);
 //     return 0;
 // }
